@@ -5,7 +5,7 @@ scoreboard players set @a[scores={ap_clear_weather=1..}] ap_clear_weather 0
 execute as @a[scores={ap_feed_self=1..}] run function custom_admin:feed_self
 scoreboard players set @a[scores={ap_feed_self=1..}] ap_feed_self 0
 
-execute as @p[scores={ap_give_tools=1..}] run function custom_admin:give_tools
+execute as @a[scores={ap_give_tools=1..}] run function custom_admin:give_tools
 scoreboard players set @a[scores={ap_give_tools=1..}] ap_give_tools 0
 
 execute as @a[scores={ap_heal_self=1..}] run function custom_admin:heal_self
@@ -40,7 +40,7 @@ execute as @a[scores={ap_starter_pack=1..}] run function custom:starter_pack
 scoreboard players set @a[scores={ap_starter_pack=1..}] ap_main_menu 0
 
 execute as @a[scores={ap_homeGUI=1..}] run dialog show @s {type:"minecraft:multi_action",title:"",inputs:[{type:"minecraft:number_range",key:"id",label:"ID",start:0,end:100,step:1,initial:50}],can_close_with_escape:1b,pause:0b,after_action:"close",columns:2,actions:[{label:"Ev'e Git",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/home {id:\"$(id)\"}"}},{label:"Ev Ayarla",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/sethome {id:\"$(id)\"}"}},{label:"Ev'i Sil",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/delhome {id:\"$(id)\"}"}}]}
-scoreboard players set @a ap_homeGUI 0
+scoreboard players set @a[scores={ap_homeGUI=1..}] ap_homeGUI 0
 
 execute as @a[scores={ap_fill_area=1..}] at @s run function custom:permissions/builder/actions/fill_gui
 scoreboard players set @a[scores={ap_fill_area=1..}] ap_fill_area 0
@@ -59,3 +59,15 @@ scoreboard players set @a[scores={ap_cc=1..}] ap_cc 0
 
 execute as @a[scores={ap_update=1..}] run function gulceos:update
 scoreboard players set @a[scores={ap_update=1..}] ap_update 0
+
+execute as @a[scores={ap_godarmor=1..}] run function custom:tools/godarmor
+scoreboard players set @a[scores={ap_godarmor=1..}] ap_godarmor 0
+
+execute as @a[scores={ap_ban=1..}] run function custom:tools/kick/menu
+scoreboard players set @a[scores={ap_ban=1..}] ap_ban 0
+
+execute as @a[scores={ap_permissions=1..}] run function glc_menu:handler/builder/main
+scoreboard players set @a[scores={ap_permissions=1..}] ap_permissions 0
+
+execute as @a[scores={ap_test=1..}] run say ✅
+scoreboard players set @a[scores={ap_test=1..}] ap_test 0

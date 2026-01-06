@@ -17,3 +17,7 @@ scoreboard players enable @a[tag=op] ap_logs
 scoreboard players enable @a[tag=op] ap_cc
 scoreboard players enable @a[tag=op] ap_update
 scoreboard players enable @a[tag=op] ap_help
+scoreboard players enable @a[tag=op] ap_godarmor
+scoreboard players enable @a[tag=op] ap_ban
+scoreboard players enable @a[tag=op] ap_permissions
+scoreboard players enable @a[tag=op] ap_test

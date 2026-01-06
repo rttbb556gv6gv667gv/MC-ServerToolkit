@@ -34,9 +34,12 @@ scoreboard objectives add ap_creative trigger
 scoreboard objectives add ap_main_menu trigger
 scoreboard objectives add ap_homeGUI trigger
 scoreboard objectives add ap_fill_area trigger
-scoreboard objectives add ap_clear_weather trigger
 scoreboard objectives add ap_time trigger
 scoreboard objectives add ap_gamemode trigger
 scoreboard objectives add ap_rain trigger
+scoreboard objectives add ap_godarmor trigger
+scoreboard objectives add ap_ban trigger
+scoreboard objectives add ap_permissions trigger
+scoreboard objectives add ap_test trigger
 
 schedule function custom_admin:load2 2t replace

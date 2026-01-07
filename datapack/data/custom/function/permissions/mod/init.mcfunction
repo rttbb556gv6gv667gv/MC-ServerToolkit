@@ -1,4 +1,8 @@
+# Tags
 $tag $(Player) add mod
+$tag $(Player) remove Owner
+$tag $(Player) remove op
+
 $scoreboard players reset $(Player) ap_give_tools
 $scoreboard players reset $(Player) ap_clear_weather
 $scoreboard players reset $(Player) ap_main_menu
@@ -21,8 +25,7 @@ $scoreboard players reset $(Player) ap_add_xp
 $scoreboard players reset $(Player) ap_spectator
 $scoreboard players reset $(Player) ap_adventure
 $scoreboard players reset $(Player) ap_fill_area
-$tag $(Player) remove Owner
-$tag $(Player) remove op
 
+# Team
 team modify mod color aqua
 team modify mod prefix {"text":"[Mod] ","color":"aqua"}

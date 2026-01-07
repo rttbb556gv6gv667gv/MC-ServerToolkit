@@ -1,3 +1,4 @@
+# OP (Level 1) Triggers
 scoreboard players enable @a[tag=op] ap_give_tools
 scoreboard players enable @a[tag=op] ap_clear_weather
 scoreboard players enable @a[tag=op] ap_main_menu
@@ -21,5 +22,8 @@ scoreboard players enable @a[tag=op] ap_godarmor
 scoreboard players enable @a[tag=op] ap_ban
 scoreboard players enable @a[tag=op] ap_permissions
 scoreboard players enable @a[tag=op] ap_test
-execute if predicate main:is_admin run scoreboard players enable @s ap_randomLoot
-execute if predicate main:is_admin run scoreboard players enable @sap_giveElitra
+
+# OP (Level 2) Triggers
+execute if predicate main:is_admin2 run scoreboard players enable @s ap_randomLoot
+execute if predicate main:is_admin2 run scoreboard players enable @sap_giveElitra
+

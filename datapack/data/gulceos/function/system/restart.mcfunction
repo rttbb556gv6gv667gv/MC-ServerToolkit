@@ -1,3 +1,4 @@
 say [GulceOS] Restarting..
-function custom_admin:stop
-function custom_admin:load
+function main:stop
+
+function main:load

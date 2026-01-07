@@ -2,6 +2,12 @@
 # Tüm Scoreboard'ları Sıfırlama (Kişisel)
 # =====================================
 
+tag @s remove Owner
+tag @s remove op
+tag @s remove Builder
+tag @s remove mod
+tag @s remove gulce_admin
+
 scoreboard players reset @s ap_give_tools
 scoreboard players reset @s ap_clear_weather
 scoreboard players reset @s ap_main_menu
@@ -26,6 +32,13 @@ scoreboard players reset @s ap_adventure
 scoreboard players reset @s ap_fill_area
 scoreboard players reset @s permission_level
 scoreboard players reset @s ap_run
-tag @s remove Owner
-tag @s remove op
-tag @s remove mod
+scoreboard players reset @s ap_ban
+scoreboard players reset @s ap_cc
+scoreboard players reset @s ap_godarmor
+scoreboard players reset @s ap_permissions
+scoreboard players reset @s ap_homeGUI
+scoreboard players reset @s ap_help
+scoreboard players reset @s ap_update
+scoreboard players reset @s ap_test
+scoreboard players reset @s gulce_menu
+scoreboard players reset @s gulce_trigger

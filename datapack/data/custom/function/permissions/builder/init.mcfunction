@@ -1,7 +1,11 @@
+# Tags
 $tag $(Player) add Builder
+
+# Team
 team modify Builder color gray
 team modify Builder prefix {"text":"[Builder] ","color":"green"}
 $team join Builder $(Player)
+# SB
 $scoreboard players reset $(Player) ap_give_tools
 $scoreboard players reset $(Player) ap_clear_weather
 $scoreboard players reset $(Player) ap_main_menu
@@ -27,4 +31,5 @@ $scoreboard players reset $(Player) ap_fill_area
 $scoreboard players reset $(Player) permission_level
 $scoreboard players reset $(Player) ap_run
 $tag $(Player) remove Owner
+
 $tag $(Player) remove op

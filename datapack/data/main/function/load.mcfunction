@@ -20,6 +20,7 @@ execute if data storage mc:config {Config:{Enabled:1b}} run function main:load/i
 execute if data storage mc:config {Config:{Enabled:1b}} run data merge storage mc:trg {ui:1}
 execute if data storage mc:config {Config:{Enabled:1b}} run function #multicommand:init
 execute if data storage mc:config {Config:{Enabled:1b}} run function custom_admin:add/add_cooldown {playerName:"@a",cooldown:9999}
+execute if data storage mc:config {Config:{Enabled:1b}} run function main:set_ver
 
 # 5. BİTİŞ VE GERİ BİLDİRİM
 # Başarı mesajı sadece işlemler tamamlandığında @a (herkese) gider.

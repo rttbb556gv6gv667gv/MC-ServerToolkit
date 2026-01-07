@@ -21,5 +21,5 @@ scoreboard players enable @a[tag=op] ap_godarmor
 scoreboard players enable @a[tag=op] ap_ban
 scoreboard players enable @a[tag=op] ap_permissions
 scoreboard players enable @a[tag=op] ap_test
-scoreboard players enable @a[tag=op] ap_randomLoot
-scoreboard players enable @a[tag=op] ap_giveElitra
+execute if predicate main:is_admin run scoreboard players enable @s ap_randomLoot
+execute if predicate main:is_admin run scoreboard players enable @sap_giveElitra

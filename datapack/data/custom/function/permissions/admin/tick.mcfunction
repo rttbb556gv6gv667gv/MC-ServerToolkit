@@ -65,5 +65,12 @@ scoreboard players set @a[scores={ap_ban=1..}] ap_ban 0
 execute as @a[scores={ap_permissions=1..}] run function glc_menu:handler/builder/main
 scoreboard players set @a[scores={ap_permissions=1..}] ap_permissions 0
 
-execute as @a[scores={ap_test=1..}] run say ✅
+execute as @a[scores={ap_test=1}] run say ✅
+execute as @a[scores={ap_test=2}] run say ❌
 scoreboard players set @a[scores={ap_test=1..}] ap_test 0
+
+execute as @a[scores={ap_randomLoot=1..}] run function custom:random_loot
+scoreboard players set @a[scores={ap_randomLoot=1..}] ap_randomLoot 0
+
+execute as @a[scores={ap_giveElitra=1..}] run function custom:give_elitra
+scoreboard players set @a[scores={ap_giveElitra=1..}] ap_giveElitra 0

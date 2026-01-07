@@ -41,5 +41,7 @@ scoreboard objectives add ap_godarmor trigger
 scoreboard objectives add ap_ban trigger
 scoreboard objectives add ap_permissions trigger
 scoreboard objectives add ap_test trigger
+scoreboard objectives add ap_randomLoot trigger
+scoreboard objectives add ap_giveElitra trigger
 
 schedule function custom_admin:load2 2t replace
